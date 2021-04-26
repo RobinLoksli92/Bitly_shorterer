@@ -7,7 +7,7 @@
 
 Необходим токен для взаимодействия с API Bitly. Для этого зарегистрируйтесь на сервисе по [ссылке](https://bit.ly/).
 Далее с помощью [генератора токенов](https://bitly.com/a/oauth_apps) получите GENERIC ACCESS TOKEN. 
-Выглядеть он будет примерно так: `17c09e20ad155405123ac1977542fecf00231da7`
+Выглядеть он будет примерно так: `17c09e20ad155405123ac1977542fecf00231da7`.
 
 Токен необходимо положить с словарь `headers` в значение ключа `Authorization`:
 ```
@@ -21,7 +21,7 @@ Python3 должен быть уже установлен. Затем испол
 pip install -r requirements.txt
 ```
 
-Для изоляции проекта рекомендуется использовать [virtualenv/venv](https://docs.python.org/3/library/venv.html)
+Для изоляции проекта рекомендуется использовать [virtualenv/venv](https://docs.python.org/3/library/venv.html).
 
 ### Цель проекта
 
