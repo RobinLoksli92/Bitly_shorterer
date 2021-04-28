@@ -6,8 +6,13 @@ from urllib.parse import urlparse
 
 
 def create_parser():
-    parser = argparse.ArgumentParser(description='Скрипт для сокращения ссылок или подсчета переходов по битлинку')
-    parser.add_argument('site', help='В качестве аргумента передайте адрес сайта, который вы хотите сократить')
+    parser = argparse.ArgumentParser(
+        description='Скрипт для сокращения ссылок или подсчета переходов по битлинку'
+    )
+    parser.add_argument(
+        'site',
+        help='В качестве аргумента передайте адрес сайта, который вы хотите сократить'
+    )
     return parser
 
 
