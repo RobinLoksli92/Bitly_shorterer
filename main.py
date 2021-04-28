@@ -6,8 +6,8 @@ from urllib.parse import urlparse
 
 
 def create_parser():
-    parser = argparse.ArgumentParser()
-    parser.add_argument('site', ) # !
+    parser = argparse.ArgumentParser(description='Скрипт для сокращения ссылок или подсчета переходов по битлинку')
+    parser.add_argument('site', help='В качестве аргумента передайте адрес сайта, который вы хотите сократить')
     return parser
 
 
@@ -32,6 +32,7 @@ def check_the_link_for_short(headers, url_for_bitlink_info):
 
 
 def main():
+    load_dotenv()
     parser = create_parser()
     namespace = parser.parse_args()
     link_from_user = namespace.site
@@ -67,5 +68,4 @@ def main():
         
        
 if __name__ == '__main__':
-    load_dotenv()
     main()

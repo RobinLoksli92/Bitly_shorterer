@@ -16,12 +16,26 @@ headers = {
     }
 ```
 
-Python3 должен быть уже установлен. Затем используйте pip (или pip3, есть конфликт с Python2) для установки зависимостей:
+Python3 должен быть уже установлен. 
+Для изоляции проекта рекомендуется использовать [virtualenv/venv](https://docs.python.org/3/library/venv.html).
+Затем используйте pip (или pip3, есть конфликт с Python2) для установки зависимостей:
 ```
 pip install -r requirements.txt
 ```
 
-Для изоляции проекта рекомендуется использовать [virtualenv/venv](https://docs.python.org/3/library/venv.html).
+
+
+### Пример запуска
+
+```
+python main.py https://yandex.ru/
+```
+### Пример результата
+
+```
+python main.py https://yandex.ru/
+Короткая ссылка: https://bit.ly/3sH1osG
+```
 
 ### Цель проекта
 
