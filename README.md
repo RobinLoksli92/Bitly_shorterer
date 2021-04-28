@@ -9,10 +9,16 @@
 Далее с помощью [генератора токенов](https://bitly.com/a/oauth_apps) получите GENERIC ACCESS TOKEN. 
 Выглядеть он будет примерно так: `17c09e20ad155405123ac1977542fecf00231da7`.
 
-Токен необходимо положить в словарь `headers` в значение ключа `Authorization`:
+Ваш токен необходимо "спрятать". Поэтому в папке со скриптом создаем файл `.env`,
+а в него записываем `Название токена=То что вы получили по инструкции выше`. Например: 
+```
+BITLY_TOKEN=17c09e20ad155405123ac1977542fecf00231da7
+```
+
+Токен необходимо положить в словарь `headers` в значение ключа `Authorization`. :
 ```
 headers = {
-        'Authorization': #Ваш токен
+        'Authorization': os.getenv('BITLY_TOKEN')
     }
 ```
 
@@ -23,14 +29,7 @@ Python3 должен быть уже установлен.
 pip install -r requirements.txt
 ```
 
-
-
 ### Пример запуска
-
-```
-python main.py https://yandex.ru/
-```
-### Пример результата
 
 ```
 python main.py https://yandex.ru/
