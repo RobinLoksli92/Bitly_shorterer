@@ -9,7 +9,7 @@
 Далее с помощью [генератора токенов](https://bitly.com/a/oauth_apps) получите GENERIC ACCESS TOKEN. 
 Выглядеть он будет примерно так: `17c09e20ad155405123ac1977542fecf00231da7`.
 
-Токен необходимо положить с словарь `headers` в значение ключа `Authorization`:
+Токен необходимо положить в словарь `headers` в значение ключа `Authorization`:
 ```
 headers = {
         'Authorization': #Ваш токен
